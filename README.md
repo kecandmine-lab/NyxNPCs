@@ -1,0 +1,2 @@
+# NyxNPCs
+Easy NPC Plugin
