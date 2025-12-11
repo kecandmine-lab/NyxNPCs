@@ -1,0 +1,30 @@
+# NyxNPCs Configuration
+
+# Plugin settings
+settings:
+  # Auto-save interval in minutes (0 to disable)
+  auto-save-interval: 5
+  
+  # Show NPCs to players when they join
+  show-on-join: true
+  
+  # Delay in ticks before showing NPCs to joining players (20 ticks = 1 second)
+  join-delay: 20
+
+# Messages (use & for color codes)
+messages:
+  prefix: "&7[&bNPC&7]"
+  npc-created: "&aNPC created: &f%name% &7(ID: %id%)"
+  npc-removed: "&cRemoved NPC: &f%name%"
+  npc-not-found: "&cNPC with ID %id% not found."
+  no-permission: "&cYou don't have permission to do that."
+  skin-updating: "&eFetching skin for: &f%player%&e..."
+  skin-updated: "&aSkin updated for NPC: &f%name%"
+  skin-failed: "&cFailed to fetch skin for: &f%player%"
+  action-added: "&aAction added to NPC: &f%name%"
+  actions-cleared: "&aActions cleared for NPC: &f%name%"
+
+# NPC default settings
+npc-defaults:
+  # Default interaction message when NPC has no actions
+  default-message: "&7%npc% &7says: Hello, &f%player%&7!"

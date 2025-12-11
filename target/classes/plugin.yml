@@ -1,0 +1,73 @@
+name: NyxNPCs
+version: '1.0.0'
+main: com.nyx.nyxnpcs.NyxNPCs
+api-version: '1.21'
+load: POSTWORLD
+authors: [Nyx]
+description: Advanced NPC plugin with PacketEvents
+website: https://github.com/nyx/nyxnpcs
+
+commands:
+  npc:
+    description: Manage NPCs
+    usage: /npc <create|select|remove|rename|displayname|type|skin|freelook|action|save> [args]
+    aliases: [npcs, nyxnpc]
+    permission: nyxnpcs.use
+  nyxnpcs:
+    description: Plugin administration
+    usage: /nyxnpcs <save|reload>
+    permission: nyxnpcs.admin
+
+permissions:
+  nyxnpcs.*:
+    description: All NyxNPCs permissions
+    default: op
+    children:
+      nyxnpcs.use: true
+      nyxnpcs.create: true
+      nyxnpcs.remove: true
+      nyxnpcs.list: true
+      nyxnpcs.rename: true
+      nyxnpcs.displayname: true
+      nyxnpcs.type: true
+      nyxnpcs.skin: true
+      nyxnpcs.freelook: true
+      nyxnpcs.action: true
+      nyxnpcs.save: true
+      nyxnpcs.admin: true
+  nyxnpcs.use:
+    description: Basic NPC usage
+    default: op
+  nyxnpcs.create:
+    description: Create NPCs
+    default: op
+  nyxnpcs.remove:
+    description: Remove NPCs
+    default: op
+  nyxnpcs.list:
+    description: List NPCs
+    default: op
+  nyxnpcs.rename:
+    description: Rename NPCs
+    default: op
+  nyxnpcs.displayname:
+    description: Change NPC display names
+    default: op
+  nyxnpcs.type:
+    description: Change NPC entity types
+    default: op
+  nyxnpcs.skin:
+    description: Change NPC skins
+    default: op
+  nyxnpcs.freelook:
+    description: Toggle NPC freelook
+    default: op
+  nyxnpcs.action:
+    description: Set NPC actions
+    default: op
+  nyxnpcs.save:
+    description: Save NPCs manually
+    default: op
+  nyxnpcs.admin:
+    description: Plugin administration
+    default: op
